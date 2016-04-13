@@ -1,0 +1,392 @@
+FACTORY: created threads
+FACTORY: started threads
+
+At time 0 Customer # 0 requesting 5  3  3  Available = 10  5  7  
+Customer # 0 using resources
+Available = 5  2  4  Allocated = 5  3  3  
+
+Customer # 0 using resources for 0 time units
+At time 0 Customer # 0 releasing 5 3 3  Available = 10  5  7  
+
+At time 1 Customer # 4 requesting 3  1  2  Available = 10  5  7  
+Customer # 4 using resources
+Available = 7  4  5  Allocated = 3  1  2  
+
+At time 1 Customer # 2 requesting 5  0  0  Available = 7  4  5  
+Customer # 2 using resources
+Available = 2  4  5  Allocated = 5  0  0  
+
+At time 1 Customer # 1 requesting 3  1  1  Available = 2  4  5  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+At time 2 Customer # 3 requesting 2  2  0  Available = 2  4  5  
+Customer # 3 using resources
+Available = 0  2  5  Allocated = 2  2  0  
+
+Customer # 4 using resources for 2 time units
+At time 3 Customer # 4 releasing 3 1 2  Available = 3  3  7  
+
+Customer # 3 using resources for 1 time units
+At time 3 Customer # 3 releasing 2 2 0  Available = 5  5  7  
+
+At time 4 Customer # 0 requesting 2  2  3  Available = 5  5  7  Customer # 0 is denied to avoid deadlock.
+
+At time 4 Customer # 0 requesting 2  0  2  Available = 5  5  7  Customer # 0 is denied to avoid deadlock.
+
+At time 4 Customer # 4 requesting 0  1  0  Available = 5  5  7  
+Customer # 4 using resources
+Available = 5  4  7  Allocated = 0  1  0  
+
+Customer # 2 using resources for 4 time units
+At time 5 Customer # 2 releasing 5 0 0  Available = 10  4  7  
+
+At time 5 Customer # 1 requesting 1  1  2  Available = 10  4  7  
+Customer # 1 using resources
+Available = 9  3  5  Allocated = 1  1  2  
+
+Customer # 4 using resources for 1 time units
+At time 5 Customer # 4 releasing 0 1 0  Available = 9  4  5  
+
+At time 6 Customer # 3 requesting 1  0  1  Available = 9  4  5  
+Customer # 3 using resources
+Available = 8  4  4  Allocated = 1  0  1  
+
+At time 7 Customer # 0 requesting 5  3  2  Available = 8  4  4  
+Customer # 0 using resources
+Available = 3  1  2  Allocated = 5  3  2  
+
+At time 7 Customer # 4 requesting 0  3  3  Available = 3  1  2  INSUFFICIENT RESOURCES
+Customer # 4 is denied to avoid deadlock.
+
+Customer # 1 using resources for 3 time units
+At time 8 Customer # 1 releasing 1 1 2  Available = 4  2  4  
+
+At time 9 Customer # 2 requesting 3  0  1  Available = 4  2  4  
+Customer # 2 using resources
+Available = 1  2  3  Allocated = 3  0  1  
+
+Customer # 0 using resources for 2 time units
+At time 9 Customer # 0 releasing 5 3 2  Available = 6  5  5  
+
+Customer # 3 using resources for 4 time units
+At time 10 Customer # 3 releasing 1 0 1  Available = 7  5  6  
+
+At time 10 Customer # 4 requesting 1  0  1  Available = 7  5  6  
+Customer # 4 using resources
+Available = 6  5  5  Allocated = 1  0  1  
+
+At time 10 Customer # 3 requesting 2  2  2  Available = 6  5  5  
+Customer # 3 using resources
+Available = 4  3  3  Allocated = 2  2  2  
+
+Customer # 4 using resources for 0 time units
+At time 10 Customer # 4 releasing 1 0 1  Available = 5  3  4  
+
+At time 11 Customer # 1 requesting 0  2  1  Available = 5  3  4  
+Customer # 1 using resources
+Available = 5  1  3  Allocated = 0  2  1  
+
+Customer # 2 using resources for 3 time units
+At time 12 Customer # 2 releasing 3 0 1  Available = 8  1  4  
+
+At time 12 Customer # 2 requesting 5  0  2  Available = 8  1  4  
+Customer # 2 using resources
+Available = 3  1  2  Allocated = 5  0  2  
+
+At time 12 Customer # 0 requesting 4  3  2  Available = 3  1  2  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+At time 12 Customer # 0 requesting 3  3  2  Available = 3  1  2  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+Customer # 1 using resources for 2 time units
+At time 13 Customer # 1 releasing 0 2 1  Available = 3  3  3  
+
+At time 13 Customer # 1 requesting 1  1  1  Available = 3  3  3  
+Customer # 1 using resources
+Available = 2  2  2  Allocated = 1  1  1  
+
+At time 13 Customer # 0 requesting 2  4  2  Available = 2  2  2  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+Customer # 3 using resources for 3 time units
+At time 13 Customer # 3 releasing 2 2 2  Available = 4  4  4  
+
+At time 13 Customer # 4 requesting 2  0  0  Available = 4  4  4  
+Customer # 4 using resources
+Available = 2  4  4  Allocated = 2  0  0  
+
+Customer # 4 using resources for 2 time units
+At time 15 Customer # 4 releasing 2 0 0  Available = 4  4  4  
+
+Customer # 1 using resources for 3 time units
+At time 16 Customer # 1 releasing 1 1 1  Available = 5  5  5  
+
+Customer # 2 using resources for 4 time units
+At time 16 Customer # 2 releasing 5 0 2  Available = 10  5  7  
+
+At time 16 Customer # 0 requesting 3  3  2  Available = 10  5  7  
+Customer # 0 using resources
+Available = 7  2  5  Allocated = 3  3  2  
+
+At time 17 Customer # 3 requesting 1  0  1  Available = 7  2  5  
+Customer # 3 using resources
+Available = 6  2  4  Allocated = 1  0  1  
+
+Customer # 0 using resources for 2 time units
+At time 18 Customer # 0 releasing 3 3 2  Available = 9  5  6  
+
+At time 18 Customer # 0 requesting 5  4  2  Available = 9  5  6  
+Customer # 0 using resources
+Available = 4  1  4  Allocated = 5  4  2  
+
+At time 18 Customer # 4 requesting 4  0  3  Available = 4  1  4  Customer # 4 is denied to avoid deadlock.
+
+At time 18 Customer # 4 requesting 3  0  2  Available = 4  1  4  Customer # 4 is denied to avoid deadlock.
+
+At time 19 Customer # 2 requesting 1  0  1  Available = 4  1  4  
+Customer # 2 using resources
+Available = 3  1  3  Allocated = 1  0  1  
+
+Customer # 3 using resources for 2 time units
+At time 19 Customer # 3 releasing 1 0 1  Available = 4  1  4  
+
+At time 20 Customer # 1 requesting 3  1  2  Available = 4  1  4  Customer # 1 is denied to avoid deadlock.
+
+Customer # 2 using resources for 1 time units
+At time 20 Customer # 2 releasing 1 0 1  Available = 5  1  5  
+
+At time 20 Customer # 4 requesting 1  2  0  Available = 5  1  5  INSUFFICIENT RESOURCES
+Customer # 4 is denied to avoid deadlock.
+
+At time 20 Customer # 4 requesting 2  0  3  Available = 5  1  5  
+Customer # 4 using resources
+Available = 3  1  2  Allocated = 2  0  3  
+
+At time 20 Customer # 3 requesting 2  0  2  Available = 3  1  2  Customer # 3 is denied to avoid deadlock.
+
+At time 21 Customer # 2 requesting 4  0  2  Available = 3  1  2  INSUFFICIENT RESOURCES
+Customer # 2 is denied to avoid deadlock.
+
+At time 21 Customer # 2 requesting 3  0  0  Available = 3  1  2  Customer # 2 is denied to avoid deadlock.
+
+At time 21 Customer # 2 requesting 2  0  2  Available = 3  1  2  Customer # 2 is denied to avoid deadlock.
+
+At time 22 Customer # 1 requesting 3  1  1  Available = 3  1  2  Customer # 1 is denied to avoid deadlock.
+
+At time 22 Customer # 1 requesting 2  2  2  Available = 3  1  2  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+At time 22 Customer # 1 requesting 3  2  0  Available = 3  1  2  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+Customer # 0 using resources for 4 time units
+At time 22 Customer # 0 releasing 5 4 2  Available = 8  5  4  
+
+At time 24 Customer # 1 requesting 1  1  1  Available = 8  5  4  
+Customer # 1 using resources
+Available = 7  4  3  Allocated = 1  1  1  
+
+At time 24 Customer # 0 requesting 3  0  3  Available = 7  4  3  
+Customer # 0 using resources
+Available = 4  4  0  Allocated = 3  0  3  
+
+Customer # 0 using resources for 0 time units
+At time 24 Customer # 0 releasing 3 0 3  Available = 7  4  3  
+
+Customer # 4 using resources for 4 time units
+At time 24 Customer # 4 releasing 2 0 3  Available = 9  4  6  
+
+At time 24 Customer # 3 requesting 2  1  0  Available = 9  4  6  
+Customer # 3 using resources
+Available = 7  3  6  Allocated = 2  1  0  
+
+At time 25 Customer # 2 requesting 6  0  2  Available = 7  3  6  
+Customer # 2 using resources
+Available = 1  3  4  Allocated = 6  0  2  
+
+At time 25 Customer # 0 requesting 0  5  0  Available = 1  3  4  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+At time 25 Customer # 4 requesting 3  3  0  Available = 1  3  4  INSUFFICIENT RESOURCES
+Customer # 4 is denied to avoid deadlock.
+
+At time 26 Customer # 0 requesting 6  4  2  Available = 1  3  4  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+At time 26 Customer # 0 requesting 1  0  2  Available = 1  3  4  
+Customer # 0 using resources
+Available = 0  3  2  Allocated = 1  0  2  
+
+Customer # 1 using resources for 3 time units
+At time 27 Customer # 1 releasing 1 1 1  Available = 1  4  3  
+
+At time 27 Customer # 1 requesting 1  0  1  Available = 1  4  3  
+Customer # 1 using resources
+Available = 0  4  2  Allocated = 1  0  1  
+
+Customer # 0 using resources for 1 time units
+At time 27 Customer # 0 releasing 1 0 2  Available = 1  4  4  
+
+Customer # 1 using resources for 1 time units
+At time 28 Customer # 1 releasing 1 0 1  Available = 2  4  5  
+
+Customer # 2 using resources for 3 time units
+At time 28 Customer # 2 releasing 6 0 2  Available = 8  4  7  
+
+Customer # 3 using resources for 4 time units
+At time 28 Customer # 3 releasing 2 1 0  Available = 10  5  7  
+
+At time 28 Customer # 4 requesting 3  3  1  Available = 10  5  7  
+Customer # 4 using resources
+Available = 7  2  6  Allocated = 3  3  1  
+
+At time 29 Customer # 0 requesting 7  1  3  Available = 7  2  6  Customer # 0 is denied to avoid deadlock.
+
+Customer # 4 using resources for 2 time units
+At time 30 Customer # 4 releasing 3 3 1  Available = 10  5  7  
+
+At time 30 Customer # 0 requesting 2  4  3  Available = 10  5  7  
+Customer # 0 using resources
+Available = 8  1  4  Allocated = 2  4  3  
+
+At time 31 Customer # 1 requesting 2  2  0  Available = 8  1  4  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+At time 32 Customer # 2 requesting 8  0  0  Available = 8  1  4  Customer # 2 is denied to avoid deadlock.
+
+At time 32 Customer # 3 requesting 1  2  1  Available = 8  1  4  INSUFFICIENT RESOURCES
+Customer # 3 is denied to avoid deadlock.
+
+At time 33 Customer # 1 requesting 0  2  1  Available = 8  1  4  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+At time 34 Customer # 1 requesting 3  2  0  Available = 8  1  4  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+Customer # 0 using resources for 4 time units
+At time 34 Customer # 0 releasing 2 4 3  Available = 10  5  7  
+
+At time 34 Customer # 4 requesting 2  3  3  Available = 10  5  7  
+Customer # 4 using resources
+Available = 8  2  4  Allocated = 2  3  3  
+
+At time 35 Customer # 0 requesting 7  5  2  Available = 8  2  4  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+At time 36 Customer # 2 requesting 3  0  1  Available = 8  2  4  
+Customer # 2 using resources
+Available = 5  2  3  Allocated = 3  0  1  
+
+At time 36 Customer # 3 requesting 0  2  2  Available = 5  2  3  
+Customer # 3 using resources
+Available = 5  0  1  Allocated = 0  2  2  
+
+At time 37 Customer # 1 requesting 3  2  0  Available = 5  0  1  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+At time 37 Customer # 1 requesting 0  1  2  Available = 5  0  1  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+At time 38 Customer # 1 requesting 0  1  2  Available = 5  0  1  INSUFFICIENT RESOURCES
+Customer # 1 is denied to avoid deadlock.
+
+Customer # 4 using resources for 4 time units
+At time 38 Customer # 4 releasing 2 3 3  Available = 7  3  4  
+
+At time 38 Customer # 0 requesting 4  4  2  Available = 7  3  4  INSUFFICIENT RESOURCES
+Customer # 0 is denied to avoid deadlock.
+
+At time 39 Customer # 4 requesting 1  0  1  Available = 7  3  4  
+Customer # 4 using resources
+Available = 6  3  3  Allocated = 1  0  1  
+
+Customer # 4 using resources for 0 time units
+At time 39 Customer # 4 releasing 1 0 1  Available = 7  3  4  
+
+Customer # 2 using resources for 4 time units
+At time 40 Customer # 2 releasing 3 0 1  Available = 10  3  5  
+
+Customer # 3 using resources for 4 time units
+At time 40 Customer # 3 releasing 0 2 2  Available = 10  5  7  
+
+At time 41 Customer # 1 requesting 1  2  0  Available = 10  5  7  
+Customer # 1 using resources
+Available = 9  3  7  Allocated = 1  2  0  
+
+At time 41 Customer # 0 requesting 0  3  3  Available = 9  3  7  
+Customer # 0 using resources
+Available = 9  0  4  Allocated = 0  3  3  
+
+At time 42 Customer # 2 requesting 1  0  0  Available = 9  0  4  
+Customer # 2 using resources
+Available = 8  0  4  Allocated = 1  0  0  
+
+Customer # 0 using resources for 1 time units
+At time 42 Customer # 0 releasing 0 3 3  Available = 8  3  7  
+
+At time 43 Customer # 3 requesting 0  2  2  Available = 8  3  7  
+Customer # 3 using resources
+Available = 8  1  5  Allocated = 0  2  2  
+
+At time 43 Customer # 4 requesting 2  1  2  Available = 8  1  5  
+Customer # 4 using resources
+Available = 6  0  3  Allocated = 2  1  2  
+
+Customer # 1 using resources for 3 time units
+At time 44 Customer # 1 releasing 1 2 0  Available = 7  2  3  
+
+Customer # 4 using resources for 1 time units
+At time 44 Customer # 4 releasing 2 1 2  Available = 9  3  5  
+
+Customer # 3 using resources for 2 time units
+At time 45 Customer # 3 releasing 0 2 2  Available = 9  5  7  
+
+At time 45 Customer # 4 requesting 2  1  2  Available = 9  5  7  
+Customer # 4 using resources
+Available = 7  4  5  Allocated = 2  1  2  
+
+Customer # 2 using resources for 4 time units
+At time 46 Customer # 2 releasing 1 0 0  Available = 8  4  5  
+
+At time 46 Customer # 2 requesting 1  0  1  Available = 8  4  5  
+Customer # 2 using resources
+Available = 7  4  4  Allocated = 1  0  1  
+
+At time 46 Customer # 1 requesting 3  1  1  Available = 7  4  4  
+Customer # 1 using resources
+Available = 4  3  3  Allocated = 3  1  1  
+
+At time 46 Customer # 0 requesting 0  0  1  Available = 4  3  3  
+Customer # 0 using resources
+Available = 4  3  2  Allocated = 0  0  1  
+
+Customer # 4 using resources for 2 time units
+At time 47 Customer # 4 releasing 2 1 2  Available = 6  4  4  
+
+At time 48 Customer # 3 requesting 0  0  0  Available = 6  4  4  
+Customer # 3 using resources
+Available = 6  4  4  Allocated = 0  0  0  
+
+Customer # 0 using resources for 2 time units
+At time 48 Customer # 0 releasing 0 0 1  Available = 6  4  5  
+
+At time 48 Customer # 4 requesting 2  1  3  Available = 6  4  5  
+Customer # 4 using resources
+Available = 4  3  2  Allocated = 2  1  3  
+
+Customer # 1 using resources for 3 time units
+At time 49 Customer # 1 releasing 3 1 1  Available = 7  4  3  
+
+At time 49 Customer # 1 requesting 0  0  0  Available = 7  4  3  
+Customer # 1 using resources
+Available = 7  4  3  Allocated = 0  0  0  
+
+Customer # 4 using resources for 1 time units
+At time 49 Customer # 4 releasing 2 1 3  Available = 9  5  6  
+FACTORY: interrupting threads
+At time 48 Customer # 0 I'm done.
+At time 49 Customer # 1 I'm done.
+At time 46 Customer # 2 I'm done.
+At time 49 Customer # 4 I'm done.
+At time 48 Customer # 3 I'm done.
