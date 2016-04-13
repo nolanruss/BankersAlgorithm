@@ -23,12 +23,12 @@ CSC 341, SP 2016
 	command in the command line terminal in the directory containing
 	the file bankersAlgorithm.c
 
-		'gcc -std=c99 bankersAlgorithm.c -pthread'
+		gcc -std=c99 bankersAlgorithm.c -pthread
 
 	Following compilation, enter the command below to run the
 	program with initial resources of 10, 5, 7, and a runtime 50.
 
-		'./a.out 10 5 7 50'
+		./a.out 10 5 7 50
 
 	All output will print to the console.
 
